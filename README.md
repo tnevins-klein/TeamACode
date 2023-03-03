@@ -2,5 +2,5 @@
 Code for the G++ VEX robotics competition team
 
 ## Contributors 
-Tani Nevins-Klein
-Devin Kennedy
+ - Tani Nevins-Klein 
+ - Devin Kennedy
