@@ -20,6 +20,8 @@
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
+#include "skills.h"
+#include "auton.h"
 #include <iostream>
 
 #define FLYWHEEL_INCREASE Controller1.ButtonR2
@@ -121,6 +123,9 @@ int main() {
   Drivetrain.setStopping(brake);
   strafe.setStopping(brake);
 
-  task process_inputs_loop(process_inputs);
-  // task auton_loop(auton);
+  competition comp;
+  comp.autonomous(autonomous);
+
+  task proc_inputs(process_inputs);
+  
 }
